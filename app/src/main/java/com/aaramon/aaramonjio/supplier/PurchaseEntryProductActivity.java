@@ -279,6 +279,7 @@ public class PurchaseEntryProductActivity extends Activity {
                     TxtView.setText(tax_amt + "");
                 } else {
                     //igst+cess
+                    int i =0;
                     double tax_per = igst + cess;
                     double tax_amt = total_amt * (tax_per / 100);
                     //tax_amt = Math.round(tax_amt);
