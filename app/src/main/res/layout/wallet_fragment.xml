@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/LayoutHeaderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:id="@+id/SupplierNameHeaderTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Wallet Details"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_action_history"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wallet_ll_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/wallet_ll_aarammoney"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.5"
+            android:background="@color/jio_main_color"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_aaramshop_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/jiomoney_logo" />
+
+            <TextView
+                android:id="@+id/tv_aaram_money_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settlement"
+                android:visibility="gone"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_ll_customerbalance"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.5"
+            android:background="@drawable/second_box"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_customer_dues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dues_money_icon_inactive" />
+
+            <TextView
+                android:id="@+id/tv_cust_due_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_balance" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wallet_ll_aarammoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/wallet_aarammoney_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/from"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/wallet_aarammoney_fromdate"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#797979" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:padding="5dp"
+                android:text="@string/to"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/wallet_aarammoney_todate"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#797979" />
+
+            <TextView
+                android:id="@+id/wallet_aarammoney_date_btn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_proceed"
+                android:gravity="center"
+                android:text="Go!"
+                android:padding="4dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/aarammoney_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/wallet_rl_aarammoney_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/payment_done"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/wallet_aarammoney_payment_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toLeftOf="@+id/img_plus_minus"
+                    android:text=""
+                    android:textColor="#797979" />
+
+                <ImageView
+                    android:id="@+id/wallet_expand_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_detail_addition_circle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sep"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/wallet_rl_aarammoney_payment"
+                android:background="@color/listview_divider" />
+
+
+            <ListView
+                android:id="@+id/wallet_aarammmoney_paymentlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sep"
+
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/wallet_rl_outstanding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_aarammmoney_paymentlist"
+                android:background="#ffffff"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/outstanding"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/wallet_aarammoney_outstanding_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toLeftOf="@+id/img_plus_minus"
+                    android:text=""
+                    android:textColor="#797979" />
+
+                <ImageView
+                    android:id="@+id/wallet_expand_outstanding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_detail_addition_circle" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/wallet_aarammoney_outstandinglist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_rl_outstanding"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/balance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/wallet_rl_balance_advance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/advance"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/wallet_balance_advance_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toLeftOf="@+id/img_plus_minus"
+                    android:text=""
+                    android:textColor="#797979" />
+
+                <ImageView
+                    android:id="@+id/wallet_expand_advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_detail_addition_circle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sep"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/wallet_rl_balance_advance"
+                android:background="@color/listview_divider" />
+
+
+            <ListView
+                android:id="@+id/wallet_advance_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sep"
+
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/wallet_rl_customer_due"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_advance_list"
+                android:background="#ffffff"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/customer_dues"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/wallet_aarammoney_customerdue_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toLeftOf="@+id/img_plus_minus"
+                    android:text=""
+                    android:textColor="#797979" />
+
+                <ImageView
+                    android:id="@+id/wallet_expand_customerdue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_detail_addition_circle" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/wallet_customerdue_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_rl_customer_due"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aarammoney_rl_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/drop_down_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Delhi"
+        android:textColor="#000000" />
+
+</RelativeLayout>

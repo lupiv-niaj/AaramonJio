@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F6F6F6">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_action_back" />
+
+        <ImageView
+            android:id="@+id/img_broadcast_dash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/jiomoney_logo"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="@string/jiomoneycode"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/jio_main_color"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/scanenterbarcode"
+            android:textColor="#FFFFFF"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back"
+            android:layout_margin="10dp"
+            android:background="@mipmap/comment_comment_box"
+            android:hint="@string/enteramounthead"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/et_scancode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_amount"
+            android:layout_margin="10dp"
+            android:background="@mipmap/comment_comment_box"
+            android:hint="@string/scannentercode"
+            android:padding="10dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/grey" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@id/rl_top_header">
+
+        <FrameLayout
+            android:id="@+id/frmQr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_paymentss"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_proceed"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/getpayment"
+            android:textColor="#FFFFFF"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aarammoney_rl_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e5e5e5"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_toLeftOf="@+id/tv_amount"
+        android:layout_toRightOf="@+id/img_product"
+        android:maxLines="2"
+        android:text="AaramShop JioMoney Payments"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img_product"
+        android:text="Dharmendra Bhaskar"
+        android:textColor="#797979" />
+
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:singleLine="true"
+        android:text="Rs. 5000"
+        android:textColor="#797979" />
+
+    <ImageView
+        android:id="@+id/image_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_amount"
+        android:src="@mipmap/ic_chevron" />
+
+</RelativeLayout>

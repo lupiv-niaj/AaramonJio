@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout
+        android:id="@+id/SupplierHeaderViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/LayoutHeaderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/BackButtonViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/ic_action_back" />
+            <TextView
+                android:id="@+id/SupplierNameHeaderTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Venkateshwara Agency"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_action_history"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/SupplierDetailsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutHeaderId"
+            android:background="#FFFAFAFA"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:id="@+id/SupplierNameTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Venkateshwara Agency"
+                android:textColor="#FF323232"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/SupplierCodeTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SupplierNameTextViewId"
+                android:layout_centerHorizontal="true"
+                android:text="Supplier Code : ABC 45678"
+                android:textColor="#CCCCCC"
+                android:textSize="12sp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/SupplierCodeTextViewId"
+                android:background="#CCCCCC"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/SupplierBillLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SupplierDetailsLayout"
+            android:background="#FFFAFAFA"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/BillNoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Bill No : "
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/BillNoValueView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/BillNoView"
+                android:text="12345"
+                android:layout_marginLeft="2dp"
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/BillDateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BillNoView"
+                android:text="Bill Date : "
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/BillDateValueView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/BillDateView"
+                android:layout_below="@+id/BillNoValueView"
+                android:text="12345"
+                android:layout_marginLeft="2dp"
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ItemsCountView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="70 Items"
+                android:layout_marginRight="10dp"
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/TaxAmountView_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/TaxAmountView"
+                android:layout_below="@+id/ItemsCountView"
+                android:text="Tax Amount"
+                android:layout_marginRight="2dp"
+                android:textColor="#FF323232"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/TaxAmountView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ItemsCountView"
+                android:text="0.00"
+                android:layout_marginRight="10dp"
+                android:textColor="#FF323232"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/TotalAmountView_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/TotalAmountView"
+                android:layout_below="@+id/TaxAmountView"
+                android:text="Bill Amount"
+                android:layout_marginRight="2dp"
+                android:textColor="#FF323232"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/TotalAmountView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TaxAmountView"
+                android:text="0.00"
+                android:layout_marginRight="10dp"
+                android:textColor="#FF323232"
+                android:textSize="13sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/PurchaseTypeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BillDateView"
+                android:text="Purchase Type : "
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/PurchaseTypeValueView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/PurchaseTypeView"
+                android:layout_below="@+id/BillDateValueView"
+                android:text="Credit"
+                android:layout_marginLeft="2dp"
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            android:textSize="12sp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/TotalAmountView"
+                android:background="#CCCCCC"
+                />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutCenterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SupplierHeaderViewId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/ProductListViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFAFAFA"
+            android:divider="#D1D1D1"
+            android:dividerHeight="1dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/FooterContainerId"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFAFAFA"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/SavePurchaseEntryTextViewId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_proceed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Purchase Entry"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

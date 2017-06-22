@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <EditText
+        android:id="@+id/ad_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/brand_redemption_scheme_mobile_no_box"
+        android:hint="@string/mobile"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/edittext_hint_color" >
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+    <EditText
+        android:id="@+id/ad_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/brand_redemption_scheme_mobile_no_box"
+        android:hint="@string/email_id"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/edittext_hint_color" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/ad_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_proceed"
+            android:text="@string/send"
+            android:textColor="@color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/ad_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_proceed"
+            android:text="@string/cancel"
+            android:textColor="@color/white" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

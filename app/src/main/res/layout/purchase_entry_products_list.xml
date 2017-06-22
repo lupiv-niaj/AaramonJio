@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/PurchaseEntryProductSummaryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#FAFAFA"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ProducticonId"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/ProductNameTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:text="Everest Chicken Masala"
+            android:textColor="#323232"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/PurchaseEntryDetailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="PD0"
+            android:textColor="#323232"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductBatchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/PurchaseEntryDetailId"
+            android:text="PB0"
+            android:textColor="#323232"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/NewProductPurchaseValueId_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductNameTextViewId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:text="Pur. Price"
+            android:ems="5"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/NewProductPurchaseValueId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductNameTextViewId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/NewProductPurchaseValueId_txt"
+            android:text="4800"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:id="@+id/ProductPurchaseValueId_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NewProductPurchaseValueId_txt"
+            android:layout_marginLeft="10dp"
+            android:ems="5"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:text="Basic Price"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/ProductPurchaseValueId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NewProductPurchaseValueId_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProductPurchaseValueId_txt"
+            android:text="4800"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/ProductQuantityLayoutId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ProductNameTextViewId"
+
+            >
+
+            <ImageView
+                android:id="@+id/ProductminusId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ic_counter_subtract" />
+
+            <TextView
+                android:id="@+id/ProductQuantityId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:text="1"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ProductPlusId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_counter_add" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ProductCESSId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductSGSTId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductIGSTId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductCGSTId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductTAXId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductTOTALId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

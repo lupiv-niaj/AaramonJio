@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#2C2C2C"
+        >
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@mipmap/ic_action_back"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/details"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/jio_main_color"
+            android:textColor="#ffffff"
+            android:text="@string/done" />
+    </RelativeLayout>
+    
+    <!-- <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_below="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Rakesh Sharma"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_due_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Rs 50.00"
+            android:textColor="#000000" />
+    </RelativeLayout> -->
+
+
+    <ListView 
+        android:layout_below="@+id/rl_header"
+        android:id="@+id/lst_dues_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"/>
+
+<!--     <RelativeLayout
+        android:id="@+id/rl_capture"
+        android:layout_above="@+id/tv_remind"
+        android:layout_marginBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_shape1"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Capture Money"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/tv_balance_money"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/single_box_small"
+            android:gravity="center_vertical|right"
+            android:padding="5dp"
+            android:hint="Rs"
+            android:inputType="number"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_remind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/new_to_aaramshop_box"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="REMIND THROUGH CHAT"
+        android:textColor="#ffffff" />
+ -->    
+</RelativeLayout>

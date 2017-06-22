@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="2dp"
+    android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_back_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:id="@+id/daily_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_back_account"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="Daily Summary"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/dashboard_textcolor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp">
+        <RelativeLayout
+            android:id="@+id/tamount"
+            android:minHeight="40dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/search_layout_border">
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Total Amount"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/TotalAmountTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/NoDailySummaryId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No Summary Available"
+            android:textColor="#D1D1D1"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview_summary"
+            android:divider="@color/listview_divider"
+            android:dividerHeight="1dp"
+            android:layout_above="@+id/add_new_add"
+            android:layout_below="@+id/tamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <TextView
+            android:id="@+id/add_new_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_proceed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Add  Sales"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    </RelativeLayout>
+

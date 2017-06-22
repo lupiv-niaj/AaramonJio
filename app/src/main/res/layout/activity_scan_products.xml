@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/img_back_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_action_back" />
+
+        <Spinner
+            android:id="@+id/list_cart"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/img_back_account"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:spinnerMode="dropdown"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:id="@+id/search_layoyt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/img_back_account"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/white_round_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.1"
+                android:src="@mipmap/ic_search" />
+
+            <EditText
+                android:id="@+id/search_product_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.83"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionDone"
+                android:hint="@string/searchadd"
+                android:singleLine="true"
+                android:background="@drawable/bottom_border_transparent"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dashboard_textcolor"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="0.01"
+                android:background="#FFF1F1F1" />
+
+            <TextView
+                android:id="@+id/quickaddproduct"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Quick ADD"
+                android:textColor="@color/jio_main_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_below"
+        android:layout_below="@+id/rl_top"
+        android:animateLayoutChanges="true"
+        android:divider="@color/listview_divider"
+        android:dividerHeight="0.5dp"
+        android:fadeScrollbars="true"
+        android:padding="5dp"
+        android:smoothScrollbar="true"
+        android:visibility="visible"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_center_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_below"
+        android:layout_below="@+id/rl_top"
+        android:background="#FF000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+
+        <com.aaramon.aaramonjio.dataaccess.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_little_transparent"
+            android:elevation="2dp"></com.aaramon.aaramonjio.dataaccess.SlidingTabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerStoreProductSubCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"></android.support.v4.view.ViewPager>
+
+        <ListView
+            android:id="@+id/listviewquickaddproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewPagerStoreProductSubCategoryName"
+            android:animateLayoutChanges="true"
+            android:divider="@color/listview_divider"
+            android:dividerHeight="0.5dp"
+            android:fadeScrollbars="true"
+            android:padding="5dp"
+            android:smoothScrollbar="true"></ListView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_below"
+        android:layout_below="@+id/rl_top"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/frmQr"
+            android:layout_width="270dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/scan_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frmQr"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_layout_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/total_item_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:text="₹0.0"
+                    android:textColor="@color/dashboard_count"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/total_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_item_amount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="1dp"
+                    android:text=""
+                    android:textColor="@color/dashboard_textcolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/total_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/img_up"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignBaseline="@id/total_tax"
+                    android:text="0 Items"
+                    android:textColor="@color/dashboard_textcolor"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_up_chevron"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/get_payment_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@color/jio_main_color"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/get_save_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/getpayment"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

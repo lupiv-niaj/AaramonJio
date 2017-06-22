@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/PurchaseEntryProductSummaryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/ProducticonId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_search" />
+        <TextView
+            android:id="@+id/ProductNameTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Everest Chicken Masala"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/PurchaseEntryDetailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PD0"
+            android:textColor="#323232"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/ProductBatchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PB0"
+            android:textColor="#323232"
+            android:layout_below="@+id/PurchaseEntryDetailId"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+         <TextView
+            android:id="@+id/ProductPurchaseValueId"
+            android:layout_below="@+id/ProductNameTextViewId"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4800"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/ProductQuantityId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 items"
+            android:textColor="#FF9B9B9B"
+            android:textSize="14sp"
+            android:layout_alignBottom="@+id/ProducticonId"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_back_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:id="@+id/purchase_and_suppliers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/purchasesuppliers"
+            android:textColor="@color/black"
+            android:textSize="18sp" ></TextView>
+
+        <LinearLayout
+            android:id="@+id/search_supplier_ll"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/img_back_account"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_round_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/supplier_search_icon"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.1"
+                android:src="@mipmap/ic_search" />
+
+            <com.aaramon.aaramonjio.dataaccess.DelayAutoCompleteTextView
+                android:id="@+id/search_supplier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.83"
+                android:hint="@string/suppliernamenumber"
+                android:textColor="#FF9B9B9B"
+                android:background="#ffffff"
+                android:imeOptions="actionDone"
+                android:nextFocusUp="@id/search_supplier"
+                android:nextFocusLeft="@id/search_supplier"
+                android:singleLine="true"
+                android:textSize="15sp" />
+            <ProgressBar
+                android:id="@+id/pb_loading_indicator"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/search_supplier"
+                android:layout_alignTop="@+id/search_supplier"
+                android:paddingRight="10dip"
+                android:paddingTop="15dip"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="0.01"
+                android:background="#FFF1F1F1" />
+
+            <TextView
+                android:id="@+id/quickaddsupplier"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/addnew"
+                android:textColor="@color/jio_main_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TVFrequenstSuppliers"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="40dp"
+            android:paddingLeft="26dp"
+            android:text="@string/frequentsupplier"
+            android:textColor="@color/black"
+            android:background="@color/search_layout_border"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/NoSuppliers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No Suppliers Available"
+            android:textColor="#D1D1D1"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            />
+        <ListView
+            android:layout_below="@+id/TVFrequenstSuppliers"
+            android:id="@+id/supplierListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@mipmap/seprator"
+            android:dividerHeight="1dp"/>
+    </RelativeLayout>
+</LinearLayout>

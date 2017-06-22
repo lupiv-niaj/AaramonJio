@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/act_LinearLayout4"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/payment_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/payment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/payment_icon"
+        android:ems="8"
+        android:text="Cash"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/mode_edittext"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:fontFamily="&apos;Open Sans&apos;, sans-serif"
+        android:gravity="right"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="0.00"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+</RelativeLayout>

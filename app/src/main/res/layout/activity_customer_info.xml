@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/RlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:id="@+id/cart_heading_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/customerdetail"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RlHeader">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:enabled="true"
+                    android:hint="@string/addcustomername"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_mobile_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name_input"
+                android:layout_marginTop="2dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/customer_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:enabled="true"
+                    android:hint="@string/addcustomermobile"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_gstn_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_mobile_input"
+                android:layout_marginTop="2dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edt_gst_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="GSTIN"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_confirm_gstinno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_gstn_no"
+                android:layout_marginTop="2dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edt_confirm_gst_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Confirm GSTIN No"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_state_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_confirm_gstinno"
+                android:layout_marginLeft="5dp"
+                android:padding="4dp"
+                android:text="State"
+                android:textColor="#FF8C8C8C"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/spn_state"
+                style="@android:style/Widget.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/txt_state_category"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_state"
+                android:layout_marginTop="2dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/customer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:enabled="true"
+                    android:hint="@string/addcustomeraddress"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/city_pincode_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_address_input"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txt_city_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_state_input"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0.5"
+                    android:theme="@style/TextLabel"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/customer_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:enabled="true"
+                        android:hint="@string/city"
+                        android:maxLines="2"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="45dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/edittext_hint_color"
+                        android:textSize="12sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txt_pincode_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_state_input"
+                    android:layout_marginTop="2dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/customer_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:hint="@string/pincode"
+                        android:maxLines="1"
+                        android:imeOptions="actionNext"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="45dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/edittext_hint_color"
+                        android:textSize="12sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city_pincode_layout"
+                android:layout_marginTop="2dp"
+                android:theme="@style/TextLabel"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/customer_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:enabled="true"
+                    android:hint="@string/addcustomeremail"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_email_input"
+                android:layout_marginTop="2dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edt_business_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Business Name"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/add_new_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_business_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_proceed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Add New Address"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/PurchaseEntryProductHeaderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:id="@+id/img_back_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_action_back" />
+        <TextView
+            android:id="@+id/add_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Purchase &amp; Suppliers"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/PurchaseEntryProductSummaryId"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/PurchaseEntryProductHeaderId"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:padding="10dp"
+       >
+        <ImageView
+            android:id="@+id/ProducticonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_search" />
+        <TextView
+            android:id="@+id/ProductNameTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:lines="2"
+            android:layout_marginLeft="10dp"
+            android:text="Everest Chicken Masala"
+            android:textColor="#323232"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/ProductPurchasePricePriceId"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ProductNameTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹120.00"
+            android:textColor="#323232"
+            android:textSize="16sp"
+            android:paddingRight="10dp"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator_addbrand"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/PurchaseEntryProductSummaryId"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+    <ScrollView
+        android:id="@+id/ScrollViewId"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/PurchaseEntryProductSummaryId"
+        android:layout_alignParentLeft="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            >
+            <RelativeLayout
+                android:id="@+id/ProductFirstLineId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/QuantityLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <TextView
+                        android:id="@+id/QuantityId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        android:textColor="#8C8C8C"
+                        android:textSize="16sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/QuantityTextInputLayoutId"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FF8C8C8C"
+                        android:layout_below="@+id/QuantityId"
+                        >
+                        <EditText
+                            android:id="@+id/QuantityEditTextId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#323232"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:textSize="16sp"
+                            android:text="50"
+                            android:singleLine="true"
+                            android:background="@drawable/bottom_border"/>
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/PurchasePriceLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/QuantityLayoutId"
+                    android:paddingLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/PurchasePriceId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase Price"
+                        android:textColor="#8C8C8C"
+                        android:textSize="16sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/PurchasePriceTextInputLayoutId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FF8C8C8C"
+                        android:layout_below="@+id/PurchasePriceId"
+                        >
+                        <EditText
+                            android:id="@+id/PurchasePriceEditTextId"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#323232"
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:textSize="16sp"
+                            android:text="4800.00"
+                            android:singleLine="true"
+                            android:background="@drawable/bottom_border"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProductSecondLineId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/MRPLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <TextView
+                        android:id="@+id/MRPId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MRP"
+                        android:textColor="#8C8C8C"
+                        android:textSize="16sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/MRPTextInputLayoutId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FF8C8C8C"
+                        android:layout_below="@+id/MRPId"
+                        >
+                        <EditText
+                            android:id="@+id/MRPEditTextId"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#323232"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:textSize="16sp"
+                            android:text="120.00"
+                            android:singleLine="true"
+                            android:background="@drawable/bottom_border"/>
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/SalePriceLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/MRPLayoutId"
+                    android:paddingLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/SalePriceId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sale Price"
+                        android:textColor="#8C8C8C"
+                        android:textSize="16sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/SalesPriceTextInputLayoutId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FF8C8C8C"
+                        android:layout_below="@+id/SalePriceId"
+                        >
+                        <EditText
+                            android:id="@+id/SalePriceEditTextId"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#323232"
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:textSize="16sp"
+                            android:text="120.00"
+                            android:singleLine="true"
+                            android:background="@drawable/bottom_border"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProductThirdLineId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/BatchLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <TextView
+                        android:id="@+id/BatchId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Batch #"
+                        android:textColor="#8C8C8C"
+                        android:textSize="16sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/BatchTextInputLayoutId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FF8C8C8C"
+                        android:layout_below="@+id/BatchId"
+                        >
+                        <EditText
+                            android:id="@+id/BatchEditTextId"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#323232"
+                            android:maxLength="5"
+                            android:inputType="text"
+                            android:textSize="16sp"
+                            android:text="APR2017"
+                            android:singleLine="true"
+                            android:background="@drawable/bottom_border"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/SalePriceLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/BatchLayoutId"
+                    android:paddingLeft="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/ExpiryId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expiry"
+                        android:textColor="#8C8C8C"
+                        android:textSize="16sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/ExpiryTextInputLayoutId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FF8C8C8C"
+                        android:layout_below="@+id/ExpiryId"
+                        >
+                        <EditText
+                            android:id="@+id/ExpiryEditTextId"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#323232"
+                            android:maxLength="20"
+                            android:inputType="date"
+                            android:textSize="16sp"
+                            android:text="20/04/2018"
+                            android:singleLine="true"
+                            android:background="@drawable/bottom_border"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProductFourthLineId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/EANCodeId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EAN Code"
+                    android:textColor="#8C8C8C"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"
+                    />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/EAMCodeTextInputLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:layout_below="@+id/EANCodeId"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <EditText
+                        android:id="@+id/EanCodeEditTextId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#323232"
+                        android:maxLength="100"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:text="890172512174"
+                        android:singleLine="true"
+                        android:background="@drawable/bottom_border"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProductFifthLineId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/TaxScheduleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax Schedule (%)"
+                    android:textColor="#8C8C8C"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"
+                    />
+                <Spinner
+                    android:id="@+id/TaxScheduleDataId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8C8C8C"
+                    android:layout_below="@+id/TaxScheduleId"
+                    android:layout_alignParentLeft="true"
+                    >
+                </Spinner>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/FooterFreeProductAddLineId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#FAFAFA"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/FreeProductId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Product"
+                    android:textColor="#323232"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/AddFreeProductId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:textColor="#007DC5"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/FreeProductDetailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/FooterFreeProductAddLineId"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/ProducticonId"
+                    android:layout_width="60dp"
+                    android:layout_height="77.9dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_search" />
+                <TextView
+                    android:id="@+id/FreeProductNameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ProducticonId"
+                    android:lines="2"
+                    android:layout_marginLeft="10dp"
+                    android:text="Everest Chicken Masala"
+                    android:textColor="#323232"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/FreeProductSalePriceId"
+                    android:layout_below="@+id/FreeProductNameId"
+                    android:layout_toRightOf="@+id/ProducticonId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹120.00"
+                    android:textColor="#323232"
+                    android:textSize="12sp"
+                    android:paddingRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/FreeProductUnitId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FreeProductSalePriceId"
+                    android:layout_toRightOf="@+id/ProducticonId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="500 gm"
+                    android:textColor="#9B9B9B"
+                    android:textSize="13sp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/FreeProductQuantityLayoutId"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FreeProductSalePriceId"
+                    android:layout_alignParentRight="true"
+                    >
+                    <ImageView
+                        android:id="@+id/FreeProductminusId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_counter_subtract"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/FreeProductQuantityId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="#FF9B9B9B"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/FreeProductPlusId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_counter_add"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/ProductTAXId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductMRPId"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:paddingRight="10dp"
+                android:text="Sale Price : "
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/ProductTOTALId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductMRPId"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:paddingRight="10dp"
+                android:text="Sale Price : "
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ProductCESSId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductMRPId"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:paddingRight="10dp"
+                android:text="Sale Price : "
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/ProductSGSTId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductMRPId"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:paddingRight="10dp"
+                android:text="Sale Price : "
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/ProductIGSTId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductMRPId"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:paddingRight="10dp"
+                android:text="Sale Price : "
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/ProductCGSTId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductMRPId"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:paddingRight="10dp"
+                android:text="Sale Price : "
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/ProductNameBatchNoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ProducticonId"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#323232"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/FooterContainerId"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ActionLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+         <RelativeLayout
+            android:id="@+id/PurchaseEntryLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_weight="0.5"
+             >
+            <TextView
+                android:id="@+id/PurchaseEntryViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:textColor="@color/jio_main_color"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                />
+         </RelativeLayout>
+          <RelativeLayout
+                android:id="@+id/ScanLayoutId"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/jio_main_color"
+                android:layout_weight="0.5"
+                >
+                <TextView
+                    android:id="@+id/ScanViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_centerInParent="true"
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

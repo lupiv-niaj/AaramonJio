@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/AddProductHeadingId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_back_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_action_back" />
+
+            <TextView
+                android:id="@+id/AddProductTitleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Add Products"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/SearchProductBoxId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/AddProductHeadingId"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_round_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.1"
+                android:src="@mipmap/ic_search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/search_product_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.83"
+                android:background="@drawable/bottom_border_transparent"
+                android:focusableInTouchMode="true"
+                android:hint="@string/searchadd"
+                android:imeOptions="actionDone"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#FF9B9B9B"
+                android:textColorHint="#FF9B9B9B"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="0.01"
+                android:background="#FFF1F1F1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/quickaddproduct"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Quick ADD"
+                android:textColor="#FFDE1C08"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_below"
+        android:layout_below="@+id/rl_top"
+        android:background="#FF000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/frmQr"
+            android:layout_width="270dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/scan_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frmQr"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/PurchaseEntryProductSummaryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_below"
+        android:background="#FAFAFA"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ProducticonId"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_search" />
+
+        <TextView
+            android:id="@+id/ProductNameTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:textColor="#323232"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/ProductNameBatchNoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:textColor="#323232"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/PurchaseEntryDetailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="PD0"
+            android:textColor="#323232"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/NewPurchaseEntryDetailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="PD0"
+            android:textColor="#323232"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductBatchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/PurchaseEntryDetailId"
+            android:text="PB0"
+            android:textColor="#323232"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ProductMRPId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductNameTextViewId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="MRP : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductMRPValueId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductNameTextViewId"
+            android:layout_toRightOf="@+id/ProductMRPId"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="#323232"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductSPId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductCESSId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductSGSTId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductIGSTId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductCGSTId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductTAXId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductTOTALId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Sale Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/ProductSPValueId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductMRPValueId"
+            android:layout_toRightOf="@+id/ProductSPId"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="#323232"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductPurchasetId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductSPValueId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ProducticonId"
+            android:paddingRight="10dp"
+            android:text="Purchase Price : "
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ProductPurchaseValuetId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductSPValueId"
+            android:layout_toRightOf="@+id/ProductPurchasetId"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="#323232"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/ProductQuantityLayoutId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ProductMRPValueId"
+
+            >
+
+            <ImageView
+                android:id="@+id/ProductminusId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ic_counter_subtract" />
+
+            <TextView
+                android:id="@+id/ProductQuantityId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:text="1"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ProductPlusId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_counter_add" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ActionViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/layout_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@color/white"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/total_item_amountview_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Bill Amount"
+                    android:textColor="@color/dashboard_count"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/total_item_amountview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/total_item_amountview_txt"
+                    android:text="0.0"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/dashboard_count"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/total_tax_amountview_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/total_item_amountview"
+                    android:text="Tax Amount"
+                    android:textColor="@color/dashboard_textcolor"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/total_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_item_amountview"
+                    android:layout_toRightOf="@+id/total_tax_amountview_txt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:text="0.0"
+                    android:textColor="@color/dashboard_textcolor"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/total_itemsview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/total_tax"
+                    android:layout_below="@+id/img_up"
+                    android:layout_toLeftOf="@+id/itemsview"
+                    android:text="0"
+                    android:textColor="@color/dashboard_textcolor"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/itemsview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_item_amountview"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Items"
+                    android:textColor="@color/dashboard_textcolor"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_up"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_up_chevron"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProceedLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@color/jio_main_color"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/ProceedViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Proceed"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

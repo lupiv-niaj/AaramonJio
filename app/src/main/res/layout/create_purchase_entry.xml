@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/SupplierHeaderViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/LayoutHeaderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:src="@mipmap/ic_action_back" />
+
+            <TextView
+                android:id="@+id/SupplierNameHeaderTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_action_history"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SupplierDetailsId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutHeaderId"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/SupplierNameTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venkateshwara Agency"
+                android:textColor="#FF323232"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/SupplierAddressTextViewId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SupplierNameTextViewId"
+                android:lines="2"
+                android:text="# 10, Ganesh Street,Vashi, Navi Mumbai."
+                android:textColor="#FF323232"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/SupplierMobileNoTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SupplierAddressTextViewId"
+                android:text="+91 9840336751"
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/SupplierOutstandingViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/SupplierAddressTextViewId"
+                android:text="Outstanding"
+                android:textColor="#D1D1D1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/SupplierOutstandingTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/SupplierOutstandingViewId"
+                android:paddingBottom="5dp"
+                android:text="12345.00"
+                android:textColor="#FF323232"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/SupplierOutstandingTextViewId"
+                android:background="@color/listview_divider" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutCenterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FooterContainerId"
+        android:layout_below="@+id/SupplierHeaderViewId"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/billRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/BillNoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_bill_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/BillNoLayout"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Bill No."
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/BillDateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_bill_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bottom_border"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:hint="Bill Date"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/edittext_hint_color"
+                        android:textSize="12sp" />
+
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/PaymentTypeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billRow"
+            android:layout_marginLeft="10dp"
+            android:text="Payment Type"
+            android:textColor="@color/edittext_hint_color"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/PaymentTypeSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PaymentTypeId"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@mipmap/new_customer_offer_dropdown"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/PaymentTermId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PaymentTypeSpinner"
+            android:layout_marginLeft="10dp"
+            android:text="Payment Term"
+            android:textColor="@color/edittext_hint_color"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/payment_term"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PaymentTermId"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@mipmap/new_customer_offer_dropdown"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_term">
+
+            <ImageView
+                android:id="@+id/BillScanView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/default_camera_icon" />
+
+            <TextView
+                android:id="@+id/text_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BillScanView"
+                android:layout_centerHorizontal="true"
+                android:text="Capture / Attach Bill Copy"
+                android:textColor="@color/edittext_hint_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/FooterContainerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/AddProductTextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_proceed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Products"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

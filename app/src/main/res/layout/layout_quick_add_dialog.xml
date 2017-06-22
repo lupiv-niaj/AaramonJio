@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/text_quick_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="@string/headertextadd"
+        android:textColor="#FF9B9B9B"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:id="@+id/chk_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_quick_add"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/food_product_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:button="@drawable/checkbox_active_deactive"
+            android:checked="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:text="Food Product"
+            android:textColor="#FF4A4A4A"
+            android:textSize="13sp" />
+
+
+        <CheckBox
+            android:id="@+id/personal_care_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.5"
+            android:button="@drawable/checkbox_active_deactive"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:text="Personal Care"
+            android:textColor="#FF4A4A4A"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/chk_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_above"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/home_care_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:button="@drawable/checkbox_active_deactive"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:text="Home Care"
+            android:textColor="#FF4A4A4A"
+            android:textSize="13sp" />
+
+
+        <CheckBox
+            android:id="@+id/others_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:button="@drawable/checkbox_active_deactive"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:text="Others"
+            android:textColor="#FF4A4A4A"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/product_name_textinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_below"
+        android:layout_weight="0.50"
+        android:theme="@style/TextLabel"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/ETproductName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/chk_below"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="left|center"
+            android:background="@drawable/bottom_border"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:focusable="true"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#FF323232"
+            android:textColorHint="#FF8C8C8C"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ean_code_textinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_textinput"
+        android:layout_weight="0.50"
+        android:theme="@style/TextLabel"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/ETean"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ETproductName"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="left|center"
+            android:hint="EAN Code"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@drawable/bottom_border"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#FF323232"
+            android:textColorHint="#FF8C8C8C"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ean_code_textinput"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/product_price_textinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:theme="@style/TextLabel"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/ETproductprice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ETean"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bottom_border"
+                android:gravity="right|center_vertical"
+                android:hint="Product Price"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="#FF323232"
+                android:textColorHint="#FF8C8C8C"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/selling_price_textinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/ETsellingprice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:focusable="true"
+                android:background="@drawable/bottom_border"
+                android:gravity="right|center_vertical"
+                android:hint="Selling Price"
+                android:inputType="numberDecimal"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="#FF323232"
+                android:textColorHint="#FF8C8C8C"
+                android:textSize="15sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_layout"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/ad_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_proceed"
+                android:text="@string/cancel"
+                android:textColor="@color/white"></Button>
+
+            <Button
+                android:id="@+id/ad_addproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_proceed"
+                android:text="Add"
+                android:textColor="@color/white"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="-25dp"
+            android:layout_toRightOf="@+id/sliding_arrow"
+            android:text="Add more details"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

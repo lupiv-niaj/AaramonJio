@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/MonthTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_half_round_border"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="June"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/DateTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MonthTextViewId"
+                android:layout_marginLeft="18dp"
+                android:text="15"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/BillNoTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/MonthTextViewId"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/MonthTextViewId"
+                android:paddingTop="5dp"
+                android:text="Bill No: 12345"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/PurchaseTypeTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BillNoTextViewId"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/MonthTextViewId"
+                android:paddingTop="5dp"
+                android:text="JioMoney"
+                android:textColor="@color/dashboard_textcolor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ItemsCountTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/BillNoTextViewId"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="1 Items"
+                android:textColor="@color/purchase_sub_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/BillAmountTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/PurchaseTypeTextViewId"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="4500.00"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        </RelativeLayout>

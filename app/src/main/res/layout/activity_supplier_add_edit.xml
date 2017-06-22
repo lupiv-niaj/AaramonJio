@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_back_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:id="@+id/add_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/supplieradd"
+            android:textColor="@color/black"
+            android:textSize="18sp"></TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_layout_border">
+
+                <TextView
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Supplier Code"
+                    android:textColor="#FF323232"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/SupplierCode"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text=""
+                    android:textColor="#FF323232"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/TextInputLayout_company_name"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Business Name"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/search_layout_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Registration Information"
+                    android:textColor="#FF323232"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_gstn_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_gstn_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/separator_phone"
+                        android:background="@drawable/bottom_border"
+                        android:hint="GSTN No."
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_pan_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_pan_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/TextInputLayout_pan_number"
+                        android:background="@drawable/bottom_border"
+                        android:hint="PAN No."
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_gst_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pan_number"
+                android:layout_marginLeft="5dp"
+                android:padding="4dp"
+                android:text="GSTIN Category"
+                android:textColor="#FF8C8C8C"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/spn_gst_category"
+                style="@android:style/Widget.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txt_pan_number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:dropDownVerticalOffset="28dp"
+                android:gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/TextInputLayout_company_name"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Address"
+                        android:imeOptions="actionNext"
+                        android:maxLength="150"
+
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_state_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_city"
+                android:layout_marginLeft="5dp"
+                android:padding="4dp"
+                android:text="State"
+                android:textColor="#FF8C8C8C"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:background="#FFFFFF">
+
+                <Spinner
+                    android:id="@+id/spn_state"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_state"
+                android:layout_marginLeft="5dp"
+                android:padding="4dp"
+                android:text="City"
+                android:textColor="#FF8C8C8C"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:background="#FFFFFF">
+
+                <Spinner
+                    android:id="@+id/spn_city"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/TextInputLayout_company_name"
+                        android:background="@drawable/bottom_border"
+                        android:hint="PinCode"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/search_layout_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Contact Information"
+                    android:textColor="#FF323232"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_contact_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_contact_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/separator_city"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Contact Person"
+                        android:imeOptions="actionNext"
+                        android:maxLength="150"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_contact_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_contact_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/TextInputLayout_contact_phone"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Phone Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/search_layout_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Bank Information"
+                    android:textColor="#FF323232"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_account_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/separator_city"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Account Number"
+                        android:imeOptions="actionNext"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_ifsc_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edit_text_ifsc_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/TextInputLayout_ifsc_code"
+                        android:background="@drawable/bottom_border"
+                        android:hint="IFSC Code"
+                        android:imeOptions="actionNext"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:textColor="#FF323232"
+                        android:textColorHint="#FF8C8C8C"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/search_layout_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Associated Companies"
+                    android:textColor="#FF323232"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_addbrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FF8C8C8C"
+                    android:theme="@style/TextLabel">
+
+                    <com.aaramon.aaramonjio.dataaccess.DelayAutoCompleteTextView
+                        android:id="@+id/addbrand"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/bottom_border"
+                        android:hint="Select Company"
+                        android:imeOptions="actionDone"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/grey"
+                        android:textSize="12dp" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/add_supplier_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_proceed"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="Add Supplier"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

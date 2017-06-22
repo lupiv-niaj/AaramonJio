@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/jiomoneydebitcredit"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+         <ImageView
+            android:id="@+id/img_broadcast_dash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/jiomoney_logo" android:visibility="visible"/>
+    </RelativeLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/otp_scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ededed">
+
+    <LinearLayout
+        android:id="@+id/jio_money_card_LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#c51114"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/jio_money_card_LinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0.55"
+            android:background="@color/jio_main_color"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="&apos;Open Sans&apos;, sans-serif"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="@string/enteramountswipecard"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jio_money_card_LinearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/greybackground"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/jio_money_card_amount"
+                android:layout_width="fill_parent"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enteramounthead" />
+
+            <EditText
+                android:id="@+id/jio_amount_card_recieve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jio_amount"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000" >
+            </EditText>
+
+            <Button
+                android:id="@+id/jio_money_card_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_proceed"
+                android:text="@string/capturepayment"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/jio_scan_card_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/swipe" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

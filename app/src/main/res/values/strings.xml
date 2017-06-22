@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="aaramshop_dashbaord">Dashboard</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="full_name">Full Name</string>
+    <string name="logout">Logout</string>
+    <string name="aaramonweb">Aaramon Web</string>
+    <string name="location">Location</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="preference">Preferences</string>
+    <string name="delivery_boy">Delivery Boy</string>
+    <string name="show_customer">My Customers</string>
+    <string name="inventory">Inventory</string>
+    <string name="bulk">Bulk</string>
+    <string name="marketing">Marketing</string>
+    <string name="payments">Payments</string>
+    <string name="faq">FAQs</string>
+    <string name="apptour">App Tour</string>
+    <string name="language_setting">Change Language</string>
+    <string name="lang_dialog_message">Choose a Language</string>
+    <string name="email_id">Email Id</string>
+    <string name="store_name">Store Name</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="offer">Offers</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="report">Reports</string>
+    <string name="pending_order">Pending Orders</string>
+    <string name="recent_order">Recent Orders</string>
+    <string name="summary">Summary of the day</string>
+    <string name="promote">Promote My Store</string>
+    <string name="total_orders_received">Total orders received</string>
+    <string name="total_sales_amount">Total sales amount</string>
+    <string name="total_new_customers">Total new customers</string>
+    <string name="total_loyalty_points">Total loyalty points</string>
+    <string name="order">Orders</string>
+    <string name="orders_amount">Orders Amount</string>
+    <string name="new_customers">New Customers</string>
+    <string name="loyalty_points">Loyalty Points</string>
+    <string name="my_customer">My Customers</string>
+    <string name="my_contact">My Contacts</string>
+    <string name="search_customer">Search Customers</string>
+    <string name="search_locality">Search Locality</string>
+    <string name="search_groups">Search Groups</string>
+    <string name="nogroupsavailable">No Groups Available</string>
+    <string name="invite">Invite</string>
+    <string name="sent">Sent</string>
+    <string name="chat_support">Support</string>
+    <string name="chat_recent">Recent</string>
+    <string name="chat_customer">Customers</string>
+    <string name="blank_chat">Your Customers are waiting to hear from you.Select a Contact and Start Chatting.</string>
+    <string name="money_earned">Money Earned</string>
+    <string name="aarammoney">AaramMoney</string>
+    <string name="customer_dues">Customer Dues</string>
+    <string name="customer_balance">Customer Balance</string>
+    <string name="payment_done">Payment Done</string>
+    <string name="outstanding">Outstanding</string>
+    <string name="due_money">Due Money</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="redeem_coupon">Redeem Coupon</string>
+    <string name="my_offer">My Offers</string>
+    <string name="coupon">My Coupons</string>
+    <string name="create_offer">Create Offer</string>
+    <string name="create_coupon_btn">Create Coupon</string>
+    <string name="blank_offer">Hey,No Offer Available Why Not Create A New Offer!</string>
+    <string name="blank_groupoffer">Hey, No Offer Available in this group, Why Not Create A New Offer!</string>
+    <string name="blank_coupon">Hey, No Coupons Available Why Not Create A Coupon!</string>
+    <string name="done">Done</string>
+    <string name="notification">Notification</string>
+    <string name="deliverystatus">Delivery Status</string>
+    <string name="chatprefence">Chat</string>
+    <string name="storetiming">Store Timings</string>
+    <string name="daysoff">Days Off</string>
+    <string name="deliverydetail">Delivery Details</string>
+    <string name="homedelivery">Home Delivery</string>
+    <string name="deliveryrange">Delivery Range</string>
+    <string name="Localitytodeliver">Locality To Delivery</string>
+    <string name="miniordervalue">Mini Order Value</string>
+    <string name="acceptedpaymentmode">Accepted Payment Mode</string>
+    <string name="bussinessdetail">Business Details</string>
+
+    <string name="selecttime">Select Time </string>
+    <string name="imageuploaderror">Something went wrong!, please try selecting another file</string>
+    <string name="yourbankno">Your Bank Account No.</string>
+    <string name="bankname">Bank Name</string>
+    <string name="branch">Branch</string>
+    <string name="ifsccode">IFSC Code</string>
+    <string name="accounttitle">Account Title</string>
+    <string name="uploadpan">Upload PAN Card</string>
+    <string name="uploadid">Upload ID Proof</string>
+    <string name="uploadaddress">Upload Address Proof</string>
+    <string name="uploadcheque">Upload Cancelled Cheque</string>
+    <string name="skip">Skip</string>
+    <string name="termscondition">Please accept Terms And Conditions</string>
+    <string name="selectpaymentmode">Please select a payment mode</string>
+    <string name="information">Information</string>
+    <string name="paymentmodeinformation">Please select the Payment modes which you accept for customer orders. Also please review the associated fee with the selected mode.</string>
+    <string name="agreetermscondition">I agree with terms and conditions.</string>
+    <string name="bussinessdetailinfo">This information is required to process and transfer your payments easily and quickly. Any money earned, either for online payment orders or any Brand related activities will be transferred to your account details filled here.</string>
+    <string name="monday">Every Monday</string>
+    <string name="tuesday">Every Tuesday</string>
+    <string name="wednesday">Every Wednesday</string>
+    <string name="thursday">Every Thursday</string>
+    <string name="friday">Every Friday</string>
+    <string name="saturday">Every Saturday</string>
+    <string name="sunday">Every Sunday</string>
+    <string name="addlocality">Add Locality</string>
+    <string name="blankaddlocality">Please enter text</string>
+    <string name="ordervaluetype">Please Select Order Value Type</string>
+    <string name="selecttype">Select Type</string>
+    <string name="globalminivalue">Global Mini Order Value</string>
+    <string name="localityordervalue">Locality Wise Order Value</string>
+    <string name="managedeliveryboy">Manage Delivery Boy</string>
+    <string name="locatedeliveryboy">Locate Delivery Boy</string>
+    <string name="deliveryboywallet">Delivery Boy Wallet</string>
+    <string name="deliveryboysettlement">Delivery Boy Settlement</string>
+    <string name="dues">Dues</string>
+    <string name="nodeliveryboyavailable">No Delivery Boy Available</string>
+    <string name="selectfromdate">Please Select From Date</string>
+    <string name="selecttodate">Please Select To Date</string>
+    <string name="selectbothdate">Please Select Both the Dates</string>
+    <string name="lessthandate">From Date should be Less than To Date</string>
+    <string name="openclosetimecheck">Open Time should be Less than Close Time</string>
+    <string name="requiredfield">Please fill the required fields !</string>
+    <string name="adddeliveryboy">Add Delivery Boy</string>
+    <string name="deliveryname">Name</string>
+    <string name="enterdeliveryname">Enter Name</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="enterphonenumber">Enter Phone Number</string>
+    <string name="deliveryboywalletdetail">Get Delivery Boy Wallet Details</string>
+    <string name="selectall">Select All</string>
+    <string name="unselectall">Unselect All</string>
+    <string name="deliveryboysettlementdetail">Delivery Boy Settlement Details</string>
+    <string name="nodues">No Dues To be Settled</string>
+    <string name="deliveryboycurrentlocation">Delivery Boy Track Location</string>
+    <string name="deleteconfirm">Are you sure,you want to delete</string>
+    <string name="entersomevalue">Please enter some value</string>
+    <string name="customers">Customers</string>
+    <string name="groupoffer">Groups Offers</string>
+    <string name="groupofferdetail">Groups Offers Detail</string>
+    <string name="nocustomeravailabe">Hey, No Customers Available!</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="totalorder">Total Orders</string>
+    <string name="totalbonuspoint">Total Bonus Point</string>
+    <string name="totalaaramrewardpoint">Total Aaram Rewards Point</string>
+    <string name="groupname">Group Name</string>
+    <string name="createnewgroup">Create New Groups</string>
+    <string name="entergroupname">Enter Group Name</string>
+    <string name="editcreditlimit">Edit Credit Limit</string>
+    <string name="entercreditlimit">Please Enter Credit Limit</string>
+    <string name="mappinpaddevice">Map Pinpad Device</string>
+    <string name="jiomoneycode">JioMoney Code</string>
+    <string name="jiomoneydebitcredit">JioMoney Debit/Credit</string>
+    <string name="transactionhistory">Transaction History</string>
+    <string name="enteramount">Please Enter Amount</string>
+    <string name="checkamount">Please Check Amount</string>
+    <string name="paymentsuccess">Payment Transfer Succesfully</string>
+    <string name="paymentcancel">Transaction has been cancelled by the Customer. Please initiate it again.</string>
+    <string name="carderror">Card Error</string>
+    <string name="jiomoneyerror">We are unable to establish connection with server.Please try again after sometime</string>
+    <string name="entermobile">Please Enter Mobile</string>
+    <string name="invalidemail">Invalid Email ID</string>
+    <string name="notificationsentsucces">Notification Sent Successfully</string>
+    <string name="tryagain">Please Try Again</string>
+    <string name="enteramountswipecard">Enter Amount &amp; Swipe Card</string>
+    <string name="enteramounthead">Enter Amount</string>
+    <string name="capturepayment">Capture Payment</string>
+    <string name="sendrefund">Send Refund</string>
+    <string name="selecttheaction">Select The Action</string>
+    <string name="sendnotification">Send Notification</string>
+    <string name="refundamount">Refund Amount</string>
+    <string name="notransaction">Hey,No Transaction History to available</string>
+    <string name="enterrefundamount">Enter Refund Amount</string>
+    <string name="send">SEND</string>
+    <string name="cancel">Cancel</string>
+    <string name="pleaseenterbarcode">Please Enter Barcode</string>
+    <string name="invalidcodeamount">Invalid code/amount entered. Please recheck</string>
+    <string name="invalidtoken">Invalid Token And Please Contact To AaramShop.</string>
+    <string name="sentnotification">Sent </string>
+    <string name="deviceswitchoff">Device Is Switched Off</string>
+    <string name="dongleidnot">Dongle ID Not Found</string>
+    <string name="devicesuccess">Congrats, your device is successfully mapped and Ready to Use.</string>
+    <string name="devicealready">This device is already mapped and Ready to Use.</string>
+    <string name="dongleserialno">Dongle Serial Number</string>
+    <string name="mapdevice">Map Device</string>
+    <string name="scanenterbarcode">Please Scan/enter Barcode</string>
+    <string name="scannentercode">Scan/Enter Code</string>
+    <string name="getpayment">Get Payment</string>
+    <string name="manageinventory">Manage Inventory</string>
+    <string name="manageexisting">Manage Existing</string>
+    <string name="manageyourownproduct">Manage Your Own Product</string>
+    <string name="managepricing">Manage Pricing</string>
+    <string name="managepricinginfo">Please carefully select the product you sell at your store, these would be displayed on your store listing on the App and Web store. You can add / remove these later from the user Preference menu.</string>
+    <string name="entersellingprice">Please Enter Selling Price!</string>
+    <string name="sellingpricecheck">Selling Price Should not be 0!</string>
+    <string name="sellingpricemrp">Selling Price should not be greater than MRP</string>
+    <string name="mastercategory">Select Master Category</string>
+    <string name="yourinventory">Your Inventory</string>
+    <string name="select_category">Select Category</string>
+    <string name="searchinventory">Search Inventory</string>
+    <string name="submit">Submit</string>
+    <string name="retailerproduct">Retailer Products</string>
+    <string name="addproduct">Add Products</string>
+    <string name="blankproduct">You have not added any products yet. Tap below to add your 1st product</string>
+    <string name="noorderavailabe">No Orders Available</string>
+    <string name="promotestore">Promote Store</string>
+    <string name="nopendingorder">Hey, No Pending Orders. Why not Promote your store!</string>
+    <string name="norecentorder">Hey, No Recent Orders. Why not Promote your store!</string>
+    <string name="ordervalue">Order Value</string>
+    <string name="allocate_delivery_boy">Allocate Delivery Boy</string>
+    <string name="report_to_aaramshop">Report as Unavailable</string>
+    <string name="couponvalue">Coupon Value</string>
+    <string name="coupondiscountcheck">Please Enter Discount Amount/Percentage</string>
+    <string name="paymentmethod">Payment Method</string>
+    <string name="deliverycharge">Delivery Charge</string>
+    <string name="amounttocollect">Amount to Collect</string>
+    <string name="modeofpayment">Mode of Payment</string>
+    <string name="delivery_boy_details">Delivery Boy Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="customerdetail">Customer Detail</string>
+    <string name="customername">Name</string>
+    <string name="customerlocation">Location</string>
+    <string name="ordercancelled">Order Cancelled</string>
+    <string name="packed">Packed</string>
+    <string name="dispacthed">Dispatched</string>
+    <string name="received">Received</string>
+    <string name="complete">Completed</string>
+    <string name="change">change</string>
+    <string name="amountcollected">Amount Collected</string>
+    <string name="totaldues">Total Dues</string>
+    <string name="totaldueblank">Please Enter Capture Amount</string>
+    <string name="seeproductdetail">SEE PRODUCT DETAILS</string>
+    <string name="productdetail">Product Details</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="order_detail">Order Details</string>
+    <string name="details">Details</string>
+    <string name="remindthroughchat">REMIND THROUGH CHAT</string>
+    <string name="broadcastreceived">Received</string>
+    <string name="broadcastsent">Sent</string>
+    <string name="broadcastmessage">Broadcast Message</string>
+    <string name="nobroadcastmessage">No Broadcast Messages</string>
+    <string name="enteraaramshopcode">Please Enter Code</string>
+    <string name="enterpassword">Please Enter Password</string>
+    <string name="aaramshopcode">AaramShop Code</string>
+    <string name="loginpassword">Password</string>
+    <string name="new_to_aaram">NEW TO AARAMSHOP</string>
+    <string name="exist_aaram">EXISTING AARAMSHOP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="signup">Sign Up |</string>
+    <string name="forgotpassword"> Forgot Password?</string>
+    <string name="changepassword">Change Password</string>
+    <string name="currentpassword">Current Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="enterfield">Please enter all fields.</string>
+    <string name="matchpassword">New password and Confirm password should be same.</string>
+    <string name="enterusername">Please Enter Username</string>
+    <string name="forgetpasswordline">Please enter your details below to receive a New Password on your Email &amp; Mobile.</string>
+    <string name="forgetpasswordtextbox">Enter Email / Store code / Mobile</string>
+    <string name="india">INDIA</string>
+    <string name="pakistan">PAKISTAN</string>
+    <string name="kenya">KENYA</string>
+    <string name="propermobileno">Please Enter Proper Mobile Number</string>
+    <string name="properstorename">Please Enter Store Name</string>
+    <string name="uploadpicture">Upload Picture</string>
+    <string name="verif_purpose">Your Phone number will only be used for verification &amp; shared with customers.</string>
+    <string name="enter_mobile">Enter Mobile Number *</string>
+    <string name="enter_store_name">Enter Store Name *</string>
+    <string name="continuee">Continue</string>
+    <string name="changepicture">Change Picture</string>
+    <string name="couldnototp">Could not find OTP</string>
+    <string name="enterotp">Please Enter OTP</string>
+    <string name="otptext">We have sent a verification code to \n xxx xxx xx</string>
+    <string name="wait_for_10_seconds">Please wait for 10 seconds. If you don\'t receive it please request for the verification code to be resent.</string>
+    <string name="resend_verif_code">RESEND VERIFICATION CODE</string>
+    <string name="enter_verif_code">Enter Verification Code</string>
+    <string name="name">Full Name</string>
+    <string name="generated_id">Generated Store Id</string>
+    <string name="aaramshop_id">aaramshop.com/</string>
+    <string name="termsconditionsign">Terms And Conditions</string>
+    <string name="textsignuppopuptermsandcondition">1.  AaramOn:Retailer needs to install and Use AaramOn for Services to Avail or Provide to AaramShop.AaramOn Merchant Application is the key to the partnership between your Store and AaramShop Pvt. Ltd. AaramOn has been designed for you to Create and Manage your Online Store,Add and Modify your Shop Inventory Online, Manage your Banking and Shop details, Manage your Orders, Create Offers and Deals, Chat and Market to your customers,Manage your Deliveries and Payments, and do all this using just your Android/ iOS SmartPhone. The Wallet in the AaramOn App will provide you real time information on the money transferred to your Bank Account, or due to you. AaramOn will help you run Coupon Programs your own as well as those from AaramShop, to reward your customers.
+ Money for all AaramShop discount Coupons will be transferred directly to your Bank Account.\n2.     Term and Termination: The term of this Agreement shall commence on the Effective Date and shall continue,
+ unless terminated in accordance with this Agreement. Either Party may terminate this Agreement for its convenience
+ with or without cause or reasons at any time during the currency of this Agreement by giving 30 days prior notice in writing to the other Party.\n
+ 3.     No Partnership or Agency: The Parties act under this AGREEMENT solely as independent contractors of one another.No agency, partnership, joint venture or employment is created as a result of this AGREEMENT. Except as expressly provided by this AGREEMENT,
+  no Party will be liable for or bound by any representations, acts or omissions whatsoever of the other.\n4.     Payment Transfer process: Payment would be processed on daily basis except the day on Banking Holidays.
+ Retailer would be notified by message and can find the detail of AaramOn.\n5.     Dispute Redressal Process: This Agreement shall be governed by Indian law. any proceeding arising out
+of or in connection with this Agreement may be brought in any Court of exclusive jurisdiction in Delhi only.\n6.  a.    Confidential Information:\na. Definition. Confidential Information shall include all information that either Party considers confidential.
+ It shall include, but not be limited to, any and all methods, processes, strategies, equipment, plans, formulas, software, programs,
+ sales and marketing information, technical and financial information, data, know-how, documentation and other information disclosed after the Effective
+ Date, whether disclosed visually, orally, or in writing, and whether or not tangibly recorded, by one Party (the Disclosing Party) to the other Party (the Receiving Party).\n
+ b.   Proprietary Nature.\nExcept as otherwise provided in this AGREEMENT, each Party considers its Confidential
+ Information to be proprietary. Except as otherwise provided in this AGREEMENT, all of the Disclosing Partys Confidential
+ Information shall at all times, and throughout the world, remain the property of the Disclosing Party, exclusively, and all
+ applicable IPRs in Disclosing Partys Confidential Information shall remain the property of the Disclosing Party, exclusively.\nc.    Confidential Information Upon Termination. Upon termination of this AGREEMENT,the Receiving Party shall return to the Disclosing Party all tangible materials and copies thereof
+ containing Confidential Information received from the Disclosing Party.
+</string>
+    <string name="stateselect">Please Select the State First</string>
+    <string name="stateselectother">Please Select any other State First</string>
+
+    <string name="addressinformation">Please fill your exact Shop Address by dragging the Map Marker or manually by typing. Please select  your delivery range in kilometers between 0 to 5.</string>
+    <string name="enterstoreaddress">Please Fill Store Address</string>
+    <string name="enterpincode">Please Fill Pin Code</string>
+    <string name="enterlocality">Please Fill Locality</string>
+    <string name="enterstate">Please Fill State</string>
+    <string name="entercity">Please Fill City</string>
+    <string name="additional_detail">Additional Details</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="store_address">Store Address</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="locality">Locality</string>
+    <string name="pincode">Pin Code</string>
+
+    <string name="selectcity">Select City</string>
+    <string name="selectstate">Select State</string>
+    <string name="localityinformation">Please fill the details about your store including opening &amp; closing time, localities you service with minimum order value and accepted payment modes.</string>
+    <string name="selectcategory">Select A Category you Sell</string>
+    <string name="savetopproduct">Save and Add Top Selling Products</string>
+    <string name="savechooseproduct">Save and Choose Products</string>
+    <string name="enterskuid">Please Enter Product Name with SkuId!</string>
+    <string name="entermrp">Please Enter MRP!</string>
+    <string name="enterselling">Please Enter Selling Price!</string>
+    <string name="checksellingprice">Selling Price Should Be less than MRP!</string>
+    <string name="mrpzero">MRP Should not be 0!</string>
+    <string name="sellingzero">Selling Price Should not be 0!</string>
+    <string name="selectcategoryfirst">Please Select any category first</string>
+    <string name="selectsubcategory">Select A Sub Category</string>
+    <string name="addyourownproduct">Add Your Own Product</string>
+    <string name="uploadproductimage">Upload Product Image</string>
+    <string name="typebarcode">Type a Bar Code</string>
+    <string name="productwithsku">Product Name With SKU</string>
+    <string name="productnamewithsku">Enter Product Name with Sku Id *</string>
+    <string name="productcategory">Select a Category</string>
+    <string name="productsubcategory">Select a Sub Category</string>
+    <string name="productmrp">Enter MRP *</string>
+    <string name="productselling">Enter Selling Price</string>
+    <string name="productavailable">Enter Available Stock</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="minimum_order">Minimum Order</string>
+    <string name="discountperzero">Discount percentage must not be 0 !</string>
+    <string name="valuezero">Value must not be 0 !</string>
+    <string name="discount100">Discount cannot be more than 100%</string>
+
+    <string name="offercheckcombo">Offer price can not be greater than Product price.</string>
+
+    <string name="products">Products</string>
+
+    <string name="couponcombocheck">Combo offer price needs to be lower than total price</string>
+    <string name="coupondiscount">Offer price should be lower than MRP</string>
+    <string name="couponoverallcheck">Discount value cannot be higher than shopping value</string>
+
+
+    <string name="enteroffer">Enter Offer Price.</string>
+    <string name="offerlimit">Offer price exceeds the limit</string>
+
+    <string name="invaliddiscount">Invalid Discount Entered</string>
+    <string name="someproduct">Please Add Some Products</string>
+    <string name="noproduct">No Product Found</string>
+    <string name="newcustomoffer">New Custom Offer</string>
+    <string name="combooffer">Combo</string>
+    <string name="discountoffer">Discounts</string>
+    <string name="overalloffer">Overall Value</string>
+    <string name="freeoffer">Free Product</string>
+    <string name="comboofferkenya">Combo Offer</string>
+    <string name="combocoupon">Combo</string>
+    <string name="selectgroupoffertype">Select Offer Type</string>
+    <string name="selectgroupofferontype">Select Product type</string>
+    <string name="productdiscountoffer">Product Discount Offer</string>
+    <string name="overalldiscountoffer">Overall Discount Offer</string>
+    <string name="allproduct">All Product</string>
+    <string name="selectedproduct">Selected Product</string>
+    <string name="pleaseselectoffertype">Please Select Offer Type</string>
+    <string name="createnewgroupoffer">Create New Offer</string>
+    <string name="pleaseselectofferontype">Please Select number of products</string>
+    <string name="pleaseproductdiscount">Please Enter Product Discount</string>
+    <string name="pleaseselectproductdiscount">Please Enter Products for Discount</string>
+    <string name="createnewoffer">Create New Offer</string>
+    <string name="chooseproduct">Choose Product</string>
+    <string name="offertitle">Offer Title</string>
+    <string name="offerprice">Offer Price</string>
+    <string name="offerdetail">Offer Details</string>
+    <string name="writedescription">Write Description</string>
+    <string name="create">Create</string>
+    <string name="searchproduct">Search Product</string>
+    <string name="value">Value</string>
+    <string name="discountpercentage">Discount Percentage</string>
+    <string name="nocouponavailable">No More Coupons Available</string>
+    <string name="entercouponcode">Please Enter Coupon Code</string>
+    <string name="brandcouponcode">Enter Coupon Code</string>
+    <string name="selectproductforcoupon">Please Select Product for Coupon</string>
+    <string name="enteroverall">Please Enter Overall Value</string>
+    <string name="enteroveralldiscount">Please Enter Overall Discount</string>
+    <string name="checkcouponamount">Please Check Coupon Amount Detail</string>
+    <string name="customcoupon">Custom Coupon Code</string>
+    <string name="randomcoupon">Random Coupon Codes</string>
+    <string name="couponcode">Coupon Code</string>
+    <string name="brandmobileno">Mobile Number</string>
+    <string name="brandname">Name</string>
+    <string name="productprice">Product Price</string>
+    <string name="overallpurchasevalue">Overall Purchase Value</string>
+    <string name="overalldicountper">Discount %</string>
+    <string name="fixedamount">Fixed Amount</string>
+    <string name="percentage">Percentage</string>
+    <string name="freeproduct">Free Product</string>
+    <string name="discountamountper">Discount Amount/Percentage</string>
+    <string name="productofferprice">Product Offer Price</string>
+    <string name="couponenddate">Coupon End Date</string>
+    <string name="offerwhatsapp">Share Offers VIA Whats App</string>
+    <string name="offerpush">Send Push Notification </string>
+    <string name="couponpush">Send Push Notification</string>
+    <string name="coupontest">Test Coupon VIA SMS</string>
+    <string name="changelanguague">Change Language</string>
+    <string name="internetnotavailable">Internet Not Available!</string>
+    <string name="network_check">Please check your internet connection.</string>
+    <string name="captureamountgrtbalance">Capture Amount is Greater Than Balance</string>
+    <string name="invitationsent">Invitation sent successfully!</string>
+    <string name="checkcamera">Rear Facing Camera Unavailable</string>
+    <string name="successlogin">You Are Successfully Logged In !</string>
+    <string name="infosuccesfull">Information Successfully Saved!</string>
+    <string name="imageuploadsuccess">Image uploaded Successfully</string>
+    <string name="validamount">Please Enter Valid Amount!</string>
+    <string name="checkboxselect">Please Select CheckBox</string>
+    <string name="customerduelessorder">Please Enter Customer Dues less than Order Amount</string>
+    <string name="enterdueamt">Please enter due amount.</string>
+    <string name="selectdeliveryboy">Please Select Delivery Boy</string>
+    <string name="noofferavailable">No Offer Available</string>
+    <string name="invalidno">Invalid Number</string>
+    <string name="recommendedprice">Recommended Price :</string>
+    <string name="mrp">MRP.</string>
+    <string name="yourmrp">Your MRP</string>
+    <string name="yoursellingprice">Your Selling Price</string>
+    <string name="addnewcustomer">Add New Customer</string>
+    <string name="addcustomername">Customer Name</string>
+    <string name="addcustomermobile">Customer Mobile No</string>
+    <string name="addcustomeremail">Customer Email-ID</string>
+    <string name="addcustomeraddress">Customer Address</string>
+    <string name="creditlimitallow">Credit Limit</string>
+
+    <string name="creditlimitamount">Credit Limit Amount</string>
+    <string name="unlimitedcredit">Unlimited Credit</string>
+    <string name="pleasentercustomername">Please Enter Customer Name</string>
+    <string name="pleasentercustomermobile">Please Enter Customer Mobile</string>
+    <string name="pleasentercustomercreditlimit">Please Enter Customer Credit Limit</string>
+    <string name="customerstransaction">Add New Transaction</string>
+    <string name="customerdetailtransaction">Add Transaction</string>
+    <string name="advance">Customer Advance</string>
+    <string name="billamount">Bill Amount</string>
+    <string name="payamount">Amount Paid</string>
+    <string name="balanceamount">Balance Amount</string>
+    <string name="addtransaction">Save Transaction</string>
+    <string name="updatecreditlimit">Update Credit Limit</string>
+    <string name="savecustomer">Add Transaction</string>
+    <string name="allowcreditlimit_allow">Do you want update Credit limit for this customer?</string>
+    <string name="nolimit">No Limit</string>
+    <string name="enterbillamount">Please Enter Bill Amount</string>
+    <string name="enterpaidamount">Please Enter Paid Amount</string>
+    <string name="totalcreditlimit">Assign Credit Limit</string>
+    <string name="totaloutstanding">Balance</string>
+    <string name="updatecustomer">Update Customer</string>
+    <string name="balancedetailinfo">Positive(+) amount means Customer Advance and Negative(-) means amount Due.</string>
+    <string name="gpssettings">GPS Settings</string>
+    <string name="settings">Settings</string>
+    <string name="groups">Groups</string>
+    <string name="nobrandredemption">No Brand Redemption Schemes Available</string>
+    <string name="holdscreenmsg">Our team will get in touch with you within 48hrs to validate your details.</string>
+    <string name="holdscreenactivate">Please wait for some time to get account activated!</string>
+    <string name="gpsmessage">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="holdscreendialog">Your registration is under process. Our team will get in touch with you within 48hrs to validate your details.</string>
+    <string name="status">Status</string>
+    <string-array name="CountryCodes">
+        <item>91,IN</item>
+        <item>254,KE</item>
+        <item>92,PK</item>
+
+    </string-array>
+    <string-array name="CountryName">
+        <item>IN</item>
+        <item>KE</item>
+        <item>PK</item>
+
+
+    </string-array>
+    <string-array name="Codes">
+        <item>91</item>
+        <item>254</item>
+        <item>92</item>
+    </string-array>
+
+
+    <string name="action_unblock">UnBlock</string>
+    <string name="error_send_mail">Can\'t send mail this time</string>
+    <string name="cannot_forward_this_message_until_it_reaches_to_server">Cannot forward this message until it reaches to server</string>
+    <string name="empty_view_contacts">None of your contact exist on AaramShop</string>
+    <string name="action_view_profile">View Profile</string>
+    <string name="action_block" translatable="false">Block</string>
+    <string name="clear_chat">Clear Chat</string>
+    <string name="action_email_chat" translatable="false">Email Chat</string>
+    <string name="call">Call</string>
+    <string name="sms">SMS</string>
+
+    <string name="new_group">New Group</string>
+    <string name="rs">`</string>
+    <string name="menu_status">Status</string>
+
+    <string name="menu_forward">Forward</string>
+    <string name="menu_copy">Copy</string>
+    <string name="menu_delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="block">Block</string>
+    <string name="chat_load_more_items">Load more items</string>
+    <string name="app_name">JioPOS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <string name="change_picture">Please click a selfie with your store at the background</string>
+
+
+    <string name="take_selfie">Take your selfie</string>
+
+
+    <string name="click_a_selfie">Please click a selfie with your store at the background</string>
+
+    <string name="app_desc">Checkout out Hackbook for Android to learn how you can make your android apps social using Facebook Platform.</string>
+    <string name="app_action">I am using the Hackbook for Android</string>
+    <string name="google_map_api_key">AIzaSyDUr3MRIU_G8wXEDpqx-1pkiPmg0jjp4qA</string>
+    <string name="request_message">Learn how to make your android apps social.</string>
+    <string name="request">Request!</string>
+    <string name="upload">Upload Photo</string>
+    <string name="post">Wall Post!</string>
+    <string name="delete">Delete Post</string>
+    <string name="no_login">Graph API Explorer</string>
+    <string name="get_permissions">Get Permissions</string>
+    <string name="access_token" translatable="false">Access Token:</string>
+    <string name="graph_domain">https://graph.facebook.com/</string>
+    <string name="label_output">Output:</string>
+    <string name="show_metadata">Show metadata</string>
+    <string name="show_picture">Show picture</string>
+    <string name="view_url">URL</string>
+    <string name="target_url">Target URL:</string>
+    <string name="exception">Exception: </string>
+    <string name="tip_label">Tip:</string>
+    <string name="error">Error</string>
+    <string name="facebook_error">Facebook Error: </string>
+    <string name="api_response">Api Response:</string>
+    <string name="view_source">View Source</string>
+    <string name="view_post">View Post</string>
+    <string name="delete_post">Delete Post</string>
+    <string name="source_code">Source Code:</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="view_photo">View Photo</string>
+    <string name="hide_photo">Hide Photo</string>
+    <string name="tag_photo">Tag Photo</string>
+    <string name="graph_button">Graph API</string>
+    <string name="fql_button">FQL Query</string>
+    <string name="source_tag">Source tag:</string>
+    <string name="permission_source_tag">Source tag: \"perms_tag\"</string>
+    <string name="Graph_FQL_title" translatable="false">Graph API or FQL Query?</string>
+    <string name="Graph_FQL_msg" translatable="false">Get friends using Graph or FQL Query?\n\nWith FQL query you can sort the list by names, whereas with Graph list will be ordered by UID and can\'t be changed.</string>
+    <string name="can_post_on_wall_title">Post on friend\'s wall</string>
+    <string name="can_post_on_wall">Friends list fetched. You can post on friend\'s wall by clicking on the item.</string>
+    <string name="ok">OK</string>
+    <string name="post_on_wall_title">Post on Wall?</string>
+    <string name="post_on_wall">Would you like to post on %1$s\'s wall</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="get_fields">Get Fields</string>
+    <string name="fields">Fields</string>
+    <string name="connections">Connections</string>
+    <string name="checkin">Check-in</string>
+
+    <string name="user">User Data</string>
+    <string name="friend">Friends Data</string>
+    <string name="extended">Extended</string>
+    <string name="gallery_remote_title">Upload from gallery or remote?</string>
+    <string name="gallery_remote_msg">Upload picture from phone\' gallery or remote server?</string>
+    <string name="gallery_button">Gallery</string>
+    <string name="remote_button">Remote</string>
+    <string name="get_location">Get Location?</string>
+    <string name="get_default_or_new_location">Get current location or use Times Square as the location?</string>
+    <string name="current_location_button">Current Location</string>
+    <string name="fetching_current_permissions">Fetching current permissions...</string>
+    <string name="explorer_message">Also, checkout the web-version of the <a href="http://developers.facebook.com/tools/explorer">Graph API Explorer tool</a></string>
+    <string name="nearby_places">Fetching nearby places...</string>
+    <string name="times_square_button">Times Square</string>
+    <string name="check_in_title">Check-in?</string>
+    <string name="permissions">Permissions</string>
+    <string name="back_parent">Back to parent</string>
+    <string name="fields_and_connections">Fields \u0026 Connections</string>
+    <string name="permissions_request">Select Permissions:</string>
+    <string name="permission_detail">Checkout <a href="https://developers.facebook.com/docs/authentication/permissions/">permissions reference doc</a></string>
+    <string name="fetching_location">Fetching Location...</string>
+    <string name="check_in_at">Would you like to check-in at %1$s?</string>
+    <string name="post_tip">\'read_stream\' permission is required to view and delete the post.\n\nUse SDK dialogs to publish stories or post on friends wall. <a href="https://developers.facebook.com/docs/reference/dialogs">More info</a>\n\n<a href="https://developers.facebook.com/docs/reference/api/Comment">Like and Comment on a post</a></string>
+    <string name="photo_tip">Photos are by default uploaded to the app\'s album. Specify album_id to upload to specific album. E.g. https://graph.facebook.com/{album_id}/photos.\n\nMore Info: https://developers.facebook.com/docs/reference/api/photo</string>
+    <string name="fqlquery">Enter FQL Query:</string>
+    <string name="enable_gps_title">Enable GPS</string>
+    <string name="enable_gps">Please enable GPS to get nearby places and check-in</string>
+    <string name="gps_settings">GPS Settings</string>
+    <string name="refresh_token_title">Refresh Token</string>
+    <string name="refresh_button">Refresh</string>
+    <string name="refund_amount">Refund Amount</string>
+    <string name="refresh_button_pending">Refreshing…</string>
+    <string name="refresh_token_tip">In most cases the access token should be refreshed silently when the application is running (for example see Hackbook onResume method).</string>
+    <string name="refresh_token_binding_error">Binding to the Facebook Android Application failed (is it installed?).</string>
+    <string name="access_token_label" translatable="false">Current access token:</string>
+    <string name="access_token_expires_label" translatable="false">Token expires at:</string>
+
+    <string name="invalidcoderesponse">Please contact Aaramshop\nAdministrator</string>
+
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="any_orientation">1D Any Orientation</string>
+    <string name="scan_from_fragment">Scan from fragment</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="custom_activity">Continuous Scan</string>
+    <string name="toolbar_activity">Activity with Toolbar</string>
+    <string name="custom_scanner">Custom Scanner Activity</string>
+    <string name="scanner_with_margin">Scanner with Margin</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="reply_label">Reply</string>
+
+    <string-array name="reply_choices">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Maybe</item>
+    </string-array>
+    <string name="English">English</string>
+    <string name="Hindi">Hindi</string>
+    <string-array name="lang_select">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+    <string name="device_is_out_of_network_coverage">Device is out of network coverage</string>
+    <string name="some_error_occurred_">Some error occurred!</string>
+    <string name="add_to_contacts">Add to Contacts</string>
+    <string name="menu_search">search</string>
+    <string name="subscription">Subscription</string>
+    <string name="blocked">Blocked</string>
+    <string name="notifications">Notifications</string>
+    <string name="help">Help</string>
+
+    <string name="subscription_1">Subscribe Daly Pack at 1500 d/day with 5 free SMS and 1 free usage day first time. Call charge 500 d/min; SMS at 300d/SMS</string>
+    <string name="subscription_2">Subscribe Daly Pack at 7000 d/day with 25 free SMS and 1 free usage day first time. Call charge 500 d/min; SMS at 300d/SMS</string>
+    <string name="subscription_3">Subscribe Daly Pack at 220000 d/day with 100 free SMS and 1 free usage day first time. Call charge 500 d/min; SMS at 300d/SMS</string>
+    <string name="subscription_4" translatable="false">Try &amp; Buy</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="country_code">+91</string>
+    <string name="app_id">398522963691512</string>
+
+    <string name="freeproductques">Add Free Product</string>
+    <string name="freecheckbox">Please Add a Free Product To Create a Coupon</string>
+    <string name="enterfreeproduct">Please Add a Free Product To Create a Coupon</string>
+    <string name="enterfreeproductprice">Please Add Free Product Price</string>
+    <string name="entercombocouponproductlist">Please Add Atleast Two Products to create this combo</string>
+    <string name="entercombocoupondiscount">Please Enter Combo Coupon Discount/Percentage</string>
+    <string name="combocoupondetail">Combo Coupon Details</string>
+    <string name="comboofferdetail">Combo Offer Details</string>
+    <string name="productlist">PRODUCT LIST</string>
+    <string name="apply">Apply</string>
+
+    <string name="marketingplan">Marketing Plan</string>
+    <string name="marketingsummaryplan">Marketing Order Summary</string>
+
+    <string name="couponredemreport">Coupon Redemption Report</string>
+    <string name="nocouponredem">No Coupon Redeem</string>
+    <string name="filter">Redemption Report Filter</string>
+    <string name="datewisefilter">DateWise Filter</string>
+    <string name="filter_coupon_valid">Coupon Validity</string>
+    <string name="plan">Plans</string>
+    <string name="buymorecredit">Buy More Credits</string>
+    <string name="credits">Credits</string>
+    <string name="available">Available</string>
+    <string name="ordersummary">Order Summary</string>
+    <string name="applybtn">Apply</string>
+    <string name="clearbtn">Clear</string>
+    <string name="paynow">Pay Now</string>
+    <string name="allcoupon">All Coupon</string>
+    <string name="activecoupon">Active Coupon</string>
+    <string name="expiredcoupon">Expired Coupon</string>
+    <string name="title_activity_scan_products">ScanProducts</string>
+    <!-- <string name="app_id">851749328184888</string> -->
+    <string name="searchadd">Search &amp; Add</string>
+    <string name="homedeliveryforthisorder">Deliver this order</string>
+    <string name="additionaldetails" tools:ignore="StringEscaping">Add Additonal Details » </string>
+    <string name="captureamountnotorderamount">Captured Amount is not equal to Order Amount</string>
+    <string name="purchasesuppliers">Purchase &amp; Suppliers</string>
+    <string name="suppliernamenumber">Supplier Name/Number</string>
+    <string name="addnew">Add New</string>
+    <string name="frequentsupplier">Frequent Suppliers</string>
+    <string name="supplieradd">Add Supplier</string>
+    <string name="supplieredit">Edit Supplier Details</string>
+    <string name="supplierecode">Supplier Code</string>
+    <string name="entercompanyname">Enter Company Name</string>
+    <string name="entercompanyaddress">Enter Company Address</string>
+    <string name="entercontactperson">Enter Contact Person</string>
+    <string name="entercontactphone">Enter Contact Phone</string>
+    <string name="enterbankaccountnumber">Enter Bank Account Number</string>
+    <string name="enterbankifsccode">Enter Bank IFSC Code</string>
+    <string name="entergstnnumber">Enter GSTIN Number</string>
+    <string name="invalidgstnnumber">Invalid GSTIN Number</string>
+    <string name="confirmGST">GSTIN Number Not Same.Please Confirm</string>
+    <string name="enterpannumber">Enter PAN Number</string>
+    <string name="invalidpannumber">Invalid PAN Number</string>
+    <string name="invalidpincode">Invalid PinCode</string>
+    <string name="entervatnumber">Enter VAT Number</string>
+    <string name="entertinnumber">Enter TIN Number</string>
+    <string name="entersalestaxnumber">Enter Sales Tax Number</string>
+    <string name="selectcompany">Select Company</string>
+    <string name="enterbusinessname">Enter Business Name</string>
+    <string name="enteraddress">Enter Address</string>
+    <string name="scan">Scan</string>
+    <string name="entercustomerforcoupon">Select Customer For Coupon Apply</string>
+    <string name="headertextadd">Quick Add</string>
+    <string name="headertextedit">Edit Product</string>
+    <string name="enterproductname">Enter Product Name</string>
+    <string name="enterproductprice">Enter Product Price</string>
+    <string name="editcustomercheck">Enter Select Customer To Edit</string>
+    <string name="pleasentercustomeraddress">Please Enter Customer Address</string>
+    <string name="deletecartconfirm">Do you want delete this cart?</string>
+    <string name="settlement">Settlements</string>
+    <string name="purchase">Purchase</string>
+    <string name="goodreturn">Goods Return</string>
+    <string name="taxreport">Tax Report</string>
+    <string name="dailysummary">Daily Summary</string>
+</resources>

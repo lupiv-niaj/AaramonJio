@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alert_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:text="Alert"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_header"
+        android:layout_margin="10dp"
+        android:maxLines="6"
+        android:text="you have not entered supplies's GSTTIN.for purchase transaction with the supplier.there will  be a tax payable on reverse charges"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_message"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/top_border"
+        android:paddingTop="1dp">
+
+        <Button
+            android:id="@+id/ad_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/right_border"
+            android:text="@string/send"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/ad_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/left_border"
+            android:text="@string/cancel"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

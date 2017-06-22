@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RlHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_action_back" />
+
+            <TextView
+                android:id="@+id/cart_heading_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/transactionhistory"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/customer_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer_layout">
+
+            <TextView
+                android:id="@+id/TVCustomerDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_layout_background"
+                android:padding="4dp"
+                android:text="Customer Details"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVCustomerDetails"
+                android:layout_marginTop="5dp"
+                android:theme="@style/TextLabel"
+                android:weightSum="1">
+
+                <com.aaramon.aaramonjio.dataaccess.DelayAutoCompleteTextView
+                    android:id="@+id/customer_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Customer Name / Mobile"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_loading_indicator"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textInputLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textInputLayout"
+                android:layout_marginRight="40dp"
+                android:paddingRight="10dip"
+                android:paddingTop="1dip"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textInputLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textInputLayout"
+                android:layout_marginRight="24dp"
+                android:src="@mipmap/ic_contacts" />
+
+            <TextView
+                android:id="@+id/fmcgloyality_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInputLayout"
+                android:padding="5dp"
+                android:text="Pay through JioMoney to use or earn FMCG Loyality"
+                android:textColor="@color/status_bar_color"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/FMCG_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fmcgloyality_text"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/fmcg_textlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FMCG_layout"
+                    android:background="@color/header_layout_background"
+                    android:padding="4dp"
+                    android:text="Loyalty"
+                    android:textColor="#FF323232"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/fmcg_loyality_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmcg_textlayout"
+                    android:layout_marginLeft="10dp"
+                    android:padding="3dp"
+                    android:src="@mipmap/ic_cash" />
+
+                <TextView
+                    android:id="@+id/fmcg_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmcg_textlayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/fmcg_loyality_image"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/fmcg_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fmcg_textlayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/fmcg_sms_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fmcg_textlayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/ic_redem_sms" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/fmcg_sms_icon"
+                    android:background="@color/listview_divider"></View>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fmcg_otp_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_otp_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="Enter OTP"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/edittext_hint_color"
+                        android:textSize="12sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/fmcg_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/fmcg_otp_verify"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view_line"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/rounded_proceed"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="8dp"
+                    android:text="Verify"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+
+                <CheckBox
+                    android:id="@+id/redem_check_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/checkbox_active_deactive"
+                    android:checked="false"
+                    android:enabled="false"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/remove_redem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/redem_check_true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="Remove"
+                    android:textColor="@color/jio_main_color"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/home_Delivery_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_detail_layout"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/delivery_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_Delivery_layout"
+                android:background="@color/header_layout_background"
+                android:padding="4dp"
+                android:text="Home Delivery"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/chkbox_delivery"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delivery_options"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/checkbox_active_deactive"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="@string/homedeliveryforthisorder"
+                android:textColor="@color/text_color" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chkbox_delivery"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/shipping_address"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:hint="Customer Shipping Address"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/expand_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_address_input"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txt_address_input"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/expand_more" />
+
+            <TextView
+                android:id="@+id/TVAddAdditionalDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_address_input"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="2dp"
+                android:text="@string/additionaldetails"
+                android:textColor="@color/jio_main_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coupon_valid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_Delivery_layout"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_coupon_offer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_Delivery_layout"
+                android:background="@color/header_layout_background"
+                android:padding="4dp"
+                android:text="Coupons &amp; Offers"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_coupon_offer_text"
+                android:layout_marginTop="5dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/ETCouponCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Enter Coupon Code"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint_color"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/TVApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textInputLayout2"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textInputLayout2"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="APPLY"
+                android:textColor="@color/jio_main_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coupon_valid_layout">
+
+            <TextView
+                android:id="@+id/payment_modes_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_layout_background"
+                android:padding="4dp"
+                android:text="Payment Modes"
+                android:textColor="#FF323232"
+                android:textSize="14sp" />
+
+            <ListView
+                android:id="@+id/payment_modes_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/payment_modes_text"
+                android:divider="@color/listview_divider"
+                android:dividerHeight="1dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RlHeader"
+            android:background="@drawable/proceed_footer"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/TVAmountPayable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/ViewFooter"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="16dp"
+                android:text="AMOUNT PAYABLE"
+                android:textColor="@color/dashboard_list_des"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/txt_cart_amount_rcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVAmountPayable"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="16dp"
+                android:text="₹0.0"
+                android:textColor="@color/amount_red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_cart_amount_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVAmountPayable"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/txt_cart_amount_rcv"
+                android:paddingLeft="1dp"
+                android:text="/"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_cart_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVAmountPayable"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/txt_cart_amount_divider"
+                android:paddingLeft="4dp"
+                android:text="₹0.0"
+                android:textColor="@color/amount_green"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/proceed_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_proceed"
+                android:padding="10dp"
+                android:text="PROCEED"
+                android:textColor="#FFFFFFFF"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
